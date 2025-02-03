@@ -1,0 +1,185 @@
+/* ルートブロック */
+.scene-manager {
+    flex-direction: column;
+    padding: 10px;
+    background-color: #2d2d30;
+    color: #d4d4d4;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* タブヘッダー */
+.scene-manager__tabs-header {
+    flex-direction: row;
+    border-bottom-width: 1px;
+    border-bottom-color: #444;
+    margin-bottom: 10px;
+}
+
+.scene-manager__tab {
+    padding: 5px 10px;
+    background-color: #3c3c3c;
+    color: #d4d4d4;
+    border: none;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.scene-manager__tab--active {
+    background-color: #007acc;
+}
+
+/* タブコンテンツ */
+.scene-manager__tabs-content {
+    flex-grow: 1;
+}
+
+.scene-manager__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.scene-manager__container--list { }
+.scene-manager__container--groups { }
+
+/* ツールバー */
+.scene-manager__toolbar {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.scene-manager__refresh-button {
+    width: 100px;
+    background-color: #007acc;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+}
+
+.scene-manager__search-field {
+    flex-grow: 1;
+    margin-left: 10px;
+    background-color: #3c3c3c;
+    color: #d4d4d4;
+}
+
+.scene-manager__sort-field {
+    width: 150px;
+    margin-left: 10px;
+    background-color: #3c3c3c;
+    color: #d4d4d4;
+}
+
+/* TextField, DropdownField のラベル部分の横幅調整 */
+.scene-manager__search-field > .unity-label,
+.scene-manager__sort-field > .unity-label {
+    width: 40px;
+    min-width: 40px;
+    margin-right: 2px;
+}
+
+/* シーン一覧用スクロールビュー */
+.scene-manager__scrollview--list {
+    flex-grow: 1;
+    background-color: #252526;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+/* シーン一覧項目 */
+.scene-item {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: #3c3c3c;
+    border-radius: 4px;
+}
+
+.scene-text-container {
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.scene-item-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.scene-item-path {
+    font-size: 11px;
+    color: #a0a0a0;
+}
+
+/* 共通ボタンスタイル */
+.common-button {
+    padding: 4px 8px;
+    font-size: 12px;
+    background-color: #007acc;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* シーングループタブ用 */
+.scene-manager__group-header {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.scene-manager__group-header > .unity-text-element {
+    min-width: 250px;
+    margin-right: 10px;
+}
+
+.scene-manager__scrollview--groups {
+    flex-grow: 1;
+    background-color: #252526;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+/* 各グループのスタイル */
+.group-item {
+    flex-direction: column;
+    background-color: #3c3c3c;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.group-header {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.group-title {
+    font-size: 14px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.group-button {
+    margin-left: 5px;
+}
+
+.group-scene-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 4px;
+    margin-bottom: 4px;
+    background-color: #444;
+    border-radius: 2px;
+}
+
+.group-scene-label {
+    flex-grow: 1;
+    font-size: 12px;
+    color: #d4d4d4;
+}

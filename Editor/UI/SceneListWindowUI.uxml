@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML 
+    xmlns:ui="UnityEngine.UIElements" 
+    xmlns="UnityEngine.UIElements">
+  <VisualElement class="scene-manager">
+    <!-- タブヘッダー -->
+    <VisualElement class="scene-manager__tabs-header">
+      <Button name="scene-manager__tab--list" text="Scene List" class="scene-manager__tab scene-manager__tab--active" />
+      <Button name="scene-manager__tab--groups" text="Scene Groups" class="scene-manager__tab" />
+    </VisualElement>
+    <!-- タブコンテンツ -->
+    <VisualElement class="scene-manager__tabs-content">
+      <!-- シーン一覧タブ -->
+      <VisualElement name="scene-manager__container--list" class="scene-manager__container scene-manager__container--list">
+        <VisualElement class="scene-manager__toolbar">
+          <Button name="scene-manager__refresh-button" class="scene-manager__refresh-button" />
+          <TextField name="scene-manager__search-field" label="Find" class="scene-manager__search-field" />
+          <DropdownField name="scene-manager__sort-field" label="Order" class="scene-manager__sort-field" />
+        </VisualElement>
+        <ScrollView name="scene-manager__scrollview--list" class="scene-manager__scrollview scene-manager__scrollview--list" />
+      </VisualElement>
+      <!-- シーングループタブ -->
+      <VisualElement name="scene-manager__container--groups" class="scene-manager__container scene-manager__container--groups" style="display: none;">
+        <!-- グループ追加エリア -->
+        <VisualElement name="scene-manager__group-header" class="scene-manager__group-header" />
+        <!-- グループ一覧表示用 -->
+        <ScrollView name="scene-manager__scrollview--groups" class="scene-manager__scrollview scene-manager__scrollview--groups" />
+      </VisualElement>
+    </VisualElement>
+  </VisualElement>
+</ui:UXML>
