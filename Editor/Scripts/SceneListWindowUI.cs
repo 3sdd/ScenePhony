@@ -7,8 +7,8 @@ public class SceneListWindowUI : EditorWindow
     SceneListController _sceneListController;
     SceneGroupController _sceneGroupController;
 
-    [MenuItem("Window/Scene List UI (Separated)")]
-    [MenuItem("Tools/Scene List UI (Separated)")]
+    [MenuItem("Window/ScenePhony")]
+    [MenuItem("Tools/ScenePhony")]
     public static void ShowWindow()
     {
         var wnd = GetWindow<SceneListWindowUI>();
