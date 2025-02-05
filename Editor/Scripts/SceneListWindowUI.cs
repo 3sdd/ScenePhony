@@ -7,12 +7,14 @@ public class SceneListWindowUI : EditorWindow
     SceneListController _sceneListController;
     SceneGroupController _sceneGroupController;
 
+    const string WindowTitle="ScenePhony";
+
     [MenuItem("Window/ScenePhony")]
     [MenuItem("Tools/ScenePhony")]
     public static void ShowWindow()
     {
         var wnd = GetWindow<SceneListWindowUI>();
-        wnd.titleContent = new GUIContent("Scene List UI");
+        wnd.titleContent = new GUIContent(WindowTitle);
     }
 
     public void CreateGUI()
