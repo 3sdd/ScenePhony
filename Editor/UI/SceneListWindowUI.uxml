@@ -4,27 +4,27 @@
     xmlns="UnityEngine.UIElements">
   <VisualElement class="scene-manager">
     <!-- タブヘッダー -->
-    <VisualElement class="scene-manager__tabs-header">
-      <Button name="scene-manager__tab--list" text="Scene List" class="scene-manager__tab scene-manager__tab--active" />
-      <Button name="scene-manager__tab--groups" text="Scene Groups" class="scene-manager__tab" />
+    <VisualElement class="scenephony__tabs-header">
+      <Button name="scenephony__tab--list" text="Scene List" class="scenephony__tab scenephony__tab--active" />
+      <Button name="scenephony__tab--groups" text="Scene Groups" class="scenephony__tab" />
     </VisualElement>
     <!-- タブコンテンツ -->
-    <VisualElement class="scene-manager__tabs-content">
+    <VisualElement class="scenephony__tabs-content">
       <!-- シーン一覧タブ -->
-      <VisualElement name="scene-manager__container--list" class="scene-manager__container scene-manager__container--list">
-        <VisualElement class="scene-manager__toolbar">
-          <Button name="scene-manager__refresh-button" class="scene-manager__refresh-button" />
-          <TextField name="scene-manager__search-field" label="Find" class="scene-manager__search-field" />
-          <DropdownField name="scene-manager__sort-field" label="Order" class="scene-manager__sort-field" />
+      <VisualElement name="scenephony__container--list" class="scenephony__container scenephony__container--list">
+        <VisualElement class="scenephony__toolbar">
+          <Button name="scenephony__refresh-button" class="scenephony__refresh-button" />
+          <TextField name="scenephony__search-field" label="Find" class="scenephony__search-field" />
+          <DropdownField name="scenephony__sort-field" label="Order" class="scenephony__sort-field" />
         </VisualElement>
-        <ScrollView name="scene-manager__scrollview--list" class="scene-manager__scrollview scene-manager__scrollview--list" />
+        <ScrollView name="scenephony__scrollview--list" class="scenephony__scrollview scenephony__scrollview--list" />
       </VisualElement>
       <!-- シーングループタブ -->
-      <VisualElement name="scene-manager__container--groups" class="scene-manager__container scene-manager__container--groups" style="display: none;">
+      <VisualElement name="scenephony__container--groups" class="scenephony__container scenephony__container--groups" style="display: none;">
         <!-- グループ追加エリア -->
-        <VisualElement name="scene-manager__group-header" class="scene-manager__group-header" />
+        <VisualElement name="scenephony__group-header" class="scenephony__group-header" />
         <!-- グループ一覧表示用 -->
-        <ScrollView name="scene-manager__scrollview--groups" class="scene-manager__scrollview scene-manager__scrollview--groups" />
+        <ScrollView name="scenephony__scrollview--groups" class="scenephony__scrollview scenephony__scrollview--groups" />
       </VisualElement>
     </VisualElement>
   </VisualElement>

@@ -1,5 +1,5 @@
 /* ルートブロック */
-.scene-manager {
+.scenephony {
     flex-direction: column;
     padding: 10px;
     background-color: #2d2d30;
@@ -8,14 +8,14 @@
 }
 
 /* タブヘッダー */
-.scene-manager__tabs-header {
+.scenephony__tabs-header {
     flex-direction: row;
     border-bottom-width: 1px;
     border-bottom-color: #444;
     margin-bottom: 10px;
 }
 
-.scene-manager__tab {
+.scenephony__tab {
     padding: 5px 10px;
     background-color: #3c3c3c;
     color: #d4d4d4;
@@ -24,31 +24,31 @@
     margin-right: 2px;
 }
 
-.scene-manager__tab--active {
+.scenephony__tab--active {
     background-color: #007acc;
 }
 
 /* タブコンテンツ */
-.scene-manager__tabs-content {
+.scenephony__tabs-content {
     flex-grow: 1;
 }
 
-.scene-manager__container {
+.scenephony__container {
     display: flex;
     flex-direction: column;
 }
 
-.scene-manager__container--list { }
-.scene-manager__container--groups { }
+.scenephony__container--list { }
+.scenephony__container--groups { }
 
 /* ツールバー */
-.scene-manager__toolbar {
+.scenephony__toolbar {
     flex-direction: row;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.scene-manager__refresh-button {
+.scenephony__refresh-button {
     width: 100px;
     background-color: #007acc;
     color: white;
@@ -56,14 +56,14 @@
     align-items: center;
 }
 
-.scene-manager__search-field {
+.scenephony__search-field {
     flex-grow: 1;
     margin-left: 10px;
     background-color: #3c3c3c;
     color: #d4d4d4;
 }
 
-.scene-manager__sort-field {
+.scenephony__sort-field {
     width: 150px;
     margin-left: 10px;
     background-color: #3c3c3c;
@@ -71,15 +71,15 @@
 }
 
 /* TextField, DropdownField のラベル部分の横幅調整 */
-.scene-manager__search-field > .unity-label,
-.scene-manager__sort-field > .unity-label {
+.scenephony__search-field > .unity-label,
+.scenephony__sort-field > .unity-label {
     width: 40px;
     min-width: 40px;
     margin-right: 2px;
 }
 
 /* シーン一覧用スクロールビュー */
-.scene-manager__scrollview--list {
+.scenephony__scrollview--list {
     flex-grow: 1;
     background-color: #252526;
     overflow-y: auto;
@@ -126,18 +126,18 @@
 }
 
 /* シーングループタブ用 */
-.scene-manager__group-header {
+.scenephony__group-header {
     flex-direction: row;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.scene-manager__group-header > .unity-text-element {
+.scenephony__group-header > .unity-text-element {
     min-width: 250px;
     margin-right: 10px;
 }
 
-.scene-manager__scrollview--groups {
+.scenephony__scrollview--groups {
     flex-grow: 1;
     background-color: #252526;
     overflow-y: auto;
