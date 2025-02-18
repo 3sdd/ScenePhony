@@ -28,12 +28,9 @@ public class SceneListWindowUI : EditorWindow
         }
         var rootFromUXML = visualTree.CloneTree();
         rootVisualElement.Add(rootFromUXML);
-        Debug.Log(visualTree);
 
         // USS の読み込み（ここではハードコーディングしていますが、必要に応じて PackagePaths からも取得可能）
         var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>(PackagePaths.SceneListWindowStyleSheetPath);
-        Debug.Log(PackagePaths.SceneListWindowStyleSheetPath);
-        Debug.Log(styleSheet);
         rootVisualElement.styleSheets.Add(styleSheet);
 
         // タブ関連の UI 要素取得（BEM 命名に合わせて変更）
