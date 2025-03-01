@@ -1,6 +1,6 @@
 {
     "name": "dev.msdd.scenephony",    
-    "version": "0.0.2",
+    "version": "0.0.3",
     "displayName": "ScenePhony",
     "description": "A Unity Editor extension for managing scenes and scene groups.",
     "unity": "6000.0",
